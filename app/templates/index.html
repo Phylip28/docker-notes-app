@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Docker Notes</title>
+</head>
+<body>
+    <h1>My Notes</h1>
+    <form method="post">
+        <input type="text" name="note" required>
+        <button type="submit">Add</button>
+    </form>
+    <ul>
+        {% for note in notes %}
+            <li>{{ note }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
