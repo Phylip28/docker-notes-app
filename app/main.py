@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 
-NOTES_FILE = "notes.txt"
+NOTES_FILE = "data/notes.txt"
 
 @app.route("/", methods=["GET", "POST"])
 def index():
